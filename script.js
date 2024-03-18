@@ -1,5 +1,6 @@
 const cButton = document.getElementById("convert-btn")
 const result = document.getElementById("output")
+const outputArea = document.getElementById("output-area")
 const convertTable = {
     "M": 1000,
     "CM": 900,
@@ -17,6 +18,7 @@ const convertTable = {
 }
 
 const convertToRoman = () => {
+    outputArea.classList.remove("hidden")
     result.textContent = ""
     const number = document.getElementById("number")
 
